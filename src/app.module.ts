@@ -13,6 +13,7 @@ import { EventsController } from './events.controller';
       entities: [Event],
       synchronize: true,
     }),
+    TypeOrmModule.forFeature([Event]),
   ],
   controllers: [AppController, EventsController],
   providers: [AppService],
